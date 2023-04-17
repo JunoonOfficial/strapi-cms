@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_featureds",
+  "info": {
+    "displayName": "Featured Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "head": {
+      "type": "string"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

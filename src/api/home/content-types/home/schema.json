@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.hero"
+    },
+    "about": {
+      "displayName": "About Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.about-section"
+    },
+    "featured": {
+      "displayName": "Featured",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.featured"
+    },
+    "story": {
+      "displayName": "Story Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "home.story-section"
+    }
+  }
+}

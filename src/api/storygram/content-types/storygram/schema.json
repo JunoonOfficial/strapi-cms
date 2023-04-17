@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "storygrams",
+  "info": {
+    "singularName": "storygram",
+    "pluralName": "storygrams",
+    "displayName": "Storygram",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "head": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

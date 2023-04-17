@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_misc_dispay_numbers",
+  "info": {
+    "displayName": "Stat",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}
