@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "storygrams",
+  "collectionName": "timeline_events",
   "info": {
-    "singularName": "storygram",
-    "pluralName": "storygrams",
-    "displayName": "Storygram",
+    "singularName": "timeline-event",
+    "pluralName": "timeline-events",
+    "displayName": "Timeline Event",
     "description": ""
   },
   "options": {
@@ -12,25 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "head": {
-      "type": "string"
+    "heading": {
+      "type": "string",
+      "required": true
     },
     "image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
     },
-    "text": {
+    "description": {
       "type": "text"
     },
-    "link": {
-      "type": "string"
-    },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     }
   }
 }

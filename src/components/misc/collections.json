@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_misc_collections",
+  "info": {
+    "displayName": "Collection-Subgroup",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::collection.collection"
+    }
+  }
+}

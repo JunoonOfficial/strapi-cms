@@ -4,7 +4,7 @@
   "info": {
     "singularName": "logo",
     "pluralName": "logos",
-    "displayName": "Logo",
+    "displayName": "Logos",
     "description": ""
   },
   "options": {
@@ -12,15 +12,36 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "logo": {
+    "fullWhite": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
+      ]
+    },
+    "fullBlack": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "smallWhite": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoOnlyWhite": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
       ]
     }
   }

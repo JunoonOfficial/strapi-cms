@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "social_links",
+  "collectionName": "members",
   "info": {
-    "singularName": "social-link",
-    "pluralName": "social-links",
-    "displayName": "Social Link",
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "Member",
     "description": ""
   },
   "options": {
@@ -12,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "firstName": {
       "type": "string"
     },
-    "link": {
+    "lastName": {
       "type": "string"
     },
-    "text": {
+    "designation": {
       "type": "string"
     }
   }

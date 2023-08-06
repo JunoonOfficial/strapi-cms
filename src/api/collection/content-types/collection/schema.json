@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "navbar_links",
+  "collectionName": "collections",
   "info": {
-    "singularName": "navbar-link",
-    "pluralName": "navbar-links",
-    "displayName": "Navbar Link",
+    "singularName": "collection",
+    "pluralName": "collections",
+    "displayName": "Collection",
     "description": ""
   },
   "options": {
@@ -19,6 +19,14 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

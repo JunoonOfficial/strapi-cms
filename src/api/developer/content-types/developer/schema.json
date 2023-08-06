@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "storygrams",
+  "collectionName": "developers",
   "info": {
-    "singularName": "storygram",
-    "pluralName": "storygrams",
-    "displayName": "Storygram",
+    "singularName": "developer",
+    "pluralName": "developers",
+    "displayName": "Developer",
     "description": ""
   },
   "options": {
@@ -12,7 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "head": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "title": {
       "type": "string"
     },
     "image": {
@@ -22,15 +28,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "text": {
-      "type": "text"
-    },
-    "link": {
-      "type": "string"
-    },
-    "date": {
-      "type": "date"
     }
   }
 }

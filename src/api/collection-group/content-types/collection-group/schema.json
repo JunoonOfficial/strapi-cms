@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_groups",
+  "info": {
+    "singularName": "collection-group",
+    "pluralName": "collection-groups",
+    "displayName": "Collection Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "subgroups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "misc.collections"
+    }
+  }
+}

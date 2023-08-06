@@ -2,7 +2,7 @@
   "name": "junoon-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "CMS for Junoon",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -21,7 +21,7 @@
     "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Junoon Tech Team"
   },
   "strapi": {
     "uuid": "cb168ef2-e970-48f2-876f-e34c15aab5ed"
