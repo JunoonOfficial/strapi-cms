@@ -1,24 +1,24 @@
 module.exports = [
-  "strapi::errors",
+  'strapi::errors',
   {
-    name: "strapi::security",
+    name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          "connect-src": ["'self'", "https:"],
-          "img-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "dl.airtable.com",
+          'connect-src': ['\'self\'', 'https:'],
+          'img-src': [
+            '\'self\'',
+            'data:',
+            'blob:',
+            'dl.airtable.com',
             `${process.env.AWS_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com`,
           ],
-          "media-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "dl.airtable.com",
+          'media-src': [
+            '\'self\'',
+            'data:',
+            'blob:',
+            'dl.airtable.com',
             `${process.env.AWS_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com`,
           ],
           upgradeInsecureRequests: null,
@@ -26,12 +26,12 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
-  "strapi::poweredBy",
-  "strapi::logger",
-  "strapi::query",
-  "strapi::body",
-  "strapi::session",
-  "strapi::favicon",
-  "strapi::public",
+  'strapi::cors',
+  'strapi::poweredBy',
+  'strapi::logger',
+  'strapi::query',
+  'strapi::body',
+  'strapi::session',
+  'strapi::favicon',
+  'strapi::public',
 ];
