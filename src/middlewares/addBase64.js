@@ -4,7 +4,8 @@ module.exports = (config, { strapi }) => async (ctx, next) => {
   const file = ctx.request.files.files;
   await next();
   if (file) {
-    const img = ctx.response.body[0];
+    const body = ctx.response.body;
+    const img = body?.length ? body[0]: body;
     const thumbnail = img.formats.thumbnail;
     
     const resizedImageBuffer = await sharp(file.path)
