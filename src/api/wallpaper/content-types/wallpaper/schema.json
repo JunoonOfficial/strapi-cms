@@ -1,32 +1,35 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "wallpapers",
   "info": {
     "singularName": "wallpaper",
     "pluralName": "wallpapers",
-    "displayName": "Wallpaper",
-    "description": ""
+    "displayName": "Wallpaper"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
+    "mobile": {
       "allowedTypes": [
-        "images"
-      ]
-    },
-    "device": {
-      "type": "enumeration",
-      "enum": [
-        "mobile",
-        "desktop"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ],
-      "required": true
+      "type": "media",
+      "multiple": true
+    },
+    "desktop": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
