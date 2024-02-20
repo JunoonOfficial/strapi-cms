@@ -3,7 +3,7 @@ const sharp = require('sharp');
 module.exports = (config, { strapi }) => async (ctx, next) => {
   const file = ctx.request.files.files;
   await next();
-  if (file) {
+  if (file && file.type.includes('image')){
     const body = ctx.response.body;
     const img = body?.length ? body[0]: body;
     const thumbnail = img.formats.thumbnail;
