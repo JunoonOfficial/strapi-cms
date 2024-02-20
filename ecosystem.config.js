@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'junoon-stapi',
-      script: 'yarn start',
+      script: 'pnpm start',
       env: {
         NODE_ENV: 'production',
       },
