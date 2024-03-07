@@ -799,6 +799,7 @@ export interface ApiCollectionCollection extends Schema.CollectionType {
     name: Attribute.String & Attribute.Required;
     link: Attribute.String & Attribute.Required;
     image: Attribute.Media & Attribute.Required;
+    date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -810,39 +811,6 @@ export interface ApiCollectionCollection extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::collection.collection',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiCollectionGroupCollectionGroup
-  extends Schema.CollectionType {
-  collectionName: 'collection_groups';
-  info: {
-    singularName: 'collection-group';
-    pluralName: 'collection-groups';
-    displayName: 'Collection Group';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required;
-    subgroups: Attribute.Component<'misc.collections', true>;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::collection-group.collection-group',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::collection-group.collection-group',
       'oneToOne',
       'admin::user'
     > &
@@ -1301,7 +1269,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::collection.collection': ApiCollectionCollection;
-      'api::collection-group.collection-group': ApiCollectionGroupCollectionGroup;
       'api::contact.contact': ApiContactContact;
       'api::department.department': ApiDepartmentDepartment;
       'api::developer.developer': ApiDeveloperDeveloper;
